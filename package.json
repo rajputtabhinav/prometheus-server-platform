@@ -1,0 +1,14 @@
+{
+  "name": "prometheus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "python scripts/dev.py",
+    "dev:full": "python scripts/dev.py --with-agent",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir backend",
+    "dev:agent": "python scripts/run_agent.py",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}

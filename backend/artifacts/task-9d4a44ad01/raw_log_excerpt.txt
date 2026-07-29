@@ -1,0 +1,2 @@
+cpu test excerpt line 1
+line 2
